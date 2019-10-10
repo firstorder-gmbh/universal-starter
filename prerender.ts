@@ -40,4 +40,5 @@ ROUTES.forEach(route => {
       provideModuleMap(LAZY_MODULE_MAP)
     ]
   })).then(html => writeFileSync(join(fullPath, 'index.html'), html));
+  console.log(`${route} done`);
 });

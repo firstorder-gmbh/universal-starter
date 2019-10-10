@@ -1,3 +1,4 @@
+import {AngularCesiumModule} from 'angular-cesium';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
@@ -19,6 +20,7 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
       { path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
     ]),
     TransferHttpCacheModule,
+    AngularCesiumModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
